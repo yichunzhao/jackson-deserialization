@@ -9,7 +9,7 @@ How to deserialization json to Java8 dateTimes
     <version>2.11.0</version>
 </dependency>
 ```
-Actually it needs only the following dependency alone, it already includes
+Actually it needs the following dependency alone, it already includes
 ![img.png](img.png)
 
 And ObjectMapper must register javaTimeModule 
