@@ -12,6 +12,10 @@ How to deserialization json to Java8 dateTimes
 Actually it needs only the following dependency alone, it already includes
 ![img.png](img.png)
 
+And ObjectMapper must register javaTimeModule 
+```
+objectMapper.registerModule(new JavaTimeModule());
+```
 ## JSR310
 
 Datatype module to make Jackson recognize Java 8 Date & Time API data types (JSR-310).
