@@ -19,7 +19,7 @@ And ObjectMapper must register javaTimeModule
 ```
 objectMapper.registerModule(new JavaTimeModule());
 ```
-It shows that the zoned date time having offset has been protected to UTC by default. So maybe the best is to write a custom DateTime deserializer.
+It shows that the zonedDateTime having been projected to UTC by default. So maybe the best is to write a custom DateTime deserializer.
 
 ## JSR310
 
