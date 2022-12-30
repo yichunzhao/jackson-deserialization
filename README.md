@@ -42,3 +42,4 @@ This module adds support for quite a few classes:
 
 
 https://www.baeldung.com/jackson-serialize-dates
+https://www.baeldung.com/jackson-deserialization
