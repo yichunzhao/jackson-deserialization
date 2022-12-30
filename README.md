@@ -19,6 +19,8 @@ And ObjectMapper must register javaTimeModule
 ```
 objectMapper.registerModule(new JavaTimeModule());
 ```
+It shows that the zoned date time having offset has been protected to UTC by default. So maybe the best is to write a custom DateTime deserializer.
+
 ## JSR310
 
 Datatype module to make Jackson recognize Java 8 Date & Time API data types (JSR-310).
