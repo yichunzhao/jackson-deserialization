@@ -1,6 +1,8 @@
 # jackson-deserialization
 How to deserialization json to Java8 dateTimes
 
+Java 8 DateTime can be deserialized when having the JSR310 dependency, and must register it within the ObjectMapper.
+
 ## Jackson Dependency
 ```
 <dependency>
