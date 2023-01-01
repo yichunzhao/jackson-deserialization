@@ -11,6 +11,7 @@ import java.time.ZonedDateTime;
 @ToString
 public class Appointment {
     private Long id;
+
     @JsonDeserialize(using = ZonedDateTimeDeserializer.class)
     private ZonedDateTime startTime;
 }

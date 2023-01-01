@@ -42,6 +42,16 @@ This module adds support for quite a few classes:
 - ZoneId
 - ZoneOffset
 
+### Custom Deserializer
+Instead of using JSR-310 to deserialize ZonedDateTime, it is a good practice to create a custom deserializer and 
+applying it directly on the data model attribute. Without registering a JSR-310 JavaDateTimeModule within ObjectMapper,
+Jackson can different project ZonedDateTime in json to target data model. 
+
+```
+    @JsonDeserialize(using = ZonedDateTimeDeserializer.class)
+    private ZonedDateTime startTime;
+
+```
 
 https://www.baeldung.com/jackson-serialize-dates
 
