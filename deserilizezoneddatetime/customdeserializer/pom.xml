@@ -12,5 +12,4 @@
     <groupId>com.ynz.demo.jackson.custom</groupId>
     <artifactId>customdeserializer</artifactId>
 
-
 </project>
