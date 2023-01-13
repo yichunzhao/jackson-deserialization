@@ -15,7 +15,7 @@ ObjectMapper before using the mapper.
 </dependency>
 ```
 
-Actually it needs the following dependency alone, it already includes
+Actually it inlcudes all required jackson dependencies, as shown in the following screen dump
 ![img.png](img.png)
 
 And ObjectMapper must register javaTimeModule
