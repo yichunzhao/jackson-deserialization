@@ -19,7 +19,7 @@ public class Object2Map {
         provider.setProviderState("active");
         provider.setRemoteModified(ZonedDateTime.now().format(DateTimeFormatter.ISO_OFFSET_DATE_TIME));
         provider.setRemoteProviderId(UUID.randomUUID().toString());
-        Map map = ObjectToMap.convert(provider);
+        Map<String, ?> map = ObjectToMap.convert(provider);
         MapUtils.verbosePrint(System.out, "Map", map);
     }
 }
