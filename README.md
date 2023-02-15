@@ -1,6 +1,6 @@
 # jackson-deserialization
 
-How to deserialization json to Java8 dateTimes
+How to deserialize json to Java8 dateTimes
 
 Java 8 DateTime can be deserialized to POJO directly when having the JSR310 dependency, and must register it within the
 ObjectMapper before using the mapper.
@@ -15,7 +15,7 @@ ObjectMapper before using the mapper.
 </dependency>
 ```
 
-Actually it needs the following dependency alone, it already includes
+Actually it inlcudes all required jackson dependencies, as shown in the following screen dump
 ![img.png](img.png)
 
 And ObjectMapper must register javaTimeModule
